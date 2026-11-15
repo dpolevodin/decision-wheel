@@ -1,0 +1,22 @@
+
+.container {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+.wheel {
+    display: block;
+    width: 100%;
+    height: auto;
+    overflow: visible;
+    filter: drop-shadow(0 8px 16px rgb(36 33 45 / 12%));
+}
+
+.rotatingGroup {
+    transform-box: view-box;
+    transform-origin: center;
+    transition: transform 5s cubic-bezier(0.12, 0.8, 0.18, 1);
+}

@@ -1,0 +1,113 @@
+
+.app {
+    width: 100%;
+    max-width: 480px;
+    min-height: 100vh;
+    margin: 0 auto;
+    padding: 32px 20px;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 32px;
+}
+
+.logo {
+    font-size: 42px;
+    margin-bottom: 12px;
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 28px;
+    font-weight: 800;
+    letter-spacing: -1px;
+}
+
+.header p {
+    margin: 10px 0 0;
+    color: #777;
+    font-size: 14px;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.wheelPlaceholder {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 220px;
+    border-radius: 24px;
+    background: #f0edff;
+    color: #6845ed;
+}
+
+.wheelPlaceholder span {
+    font-size: 64px;
+}
+
+.wheelPlaceholder p {
+    margin: 8px 0 0;
+    font-size: 14px;
+}
+
+
+.spinButton {
+    width: 100%;
+    padding: 17px;
+    border: none;
+    border-radius: 16px;
+    background: #7c5cff;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background 0.2s, transform 0.2s;
+}
+
+.spinButton:hover:not(:disabled) {
+    background: #6845ed;
+    transform: translateY(-2px);
+}
+
+.spinButton:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+.result {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    padding: 24px;
+    border: 1px solid #e5defe;
+    border-radius: 20px;
+    background: #f0edff;
+    text-align: center;
+}
+
+.result span {
+    color: #777;
+    font-size: 14px;
+}
+
+.result strong {
+    color: #6845ed;
+    font-size: 28px;
+}
+
+.result button {
+    padding: 10px 18px;
+    border: none;
+    border-radius: 10px;
+    background: #7c5cff;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+}
