@@ -83,7 +83,7 @@ export function Wheel({
             >
                 <g
                     className={styles.rotatingGroup}
-                    style={{ transform: `rotate(${rotation}deg)` }}
+                    style={{transform: `rotate(${rotation}deg)`}}
                     onTransitionEnd={handleTransitionEnd}
                 >
                     <circle
@@ -170,13 +170,8 @@ export function Wheel({
                 </g>
 
                 {/* Неподвижный указатель */}
-                <path
-                    d="M 200 5 L 181 43 L 219 43 Z"
-                    fill="#24212D"
-                    stroke="#FFFFFF"
-                    strokeWidth="3"
-                    strokeLinejoin="round"
-                />
+                <path d="M 200 43 L 181 5 L 219 5 Z" fill="#24212D" stroke="#FFFFFF" strokeWidth="3"></path>
+
             </svg>
         </div>
     );
