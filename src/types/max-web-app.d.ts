@@ -5,3 +5,7 @@ interface MaxWebApp {
     version: string | null;
     deviceName: string | null;
 }
+
+interface Window {
+    WebApp?: MaxWebApp;
+}
