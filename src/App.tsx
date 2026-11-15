@@ -11,6 +11,7 @@ import { ResultModal } from './components/ResultModal/ResultModal';
 import { History } from './components/History/History';
 
 import styles from './App.module.css';
+import {MaxBridgeInfo} from "./components/MaxBridgeInfo/MaxBridgeInfo.tsx";
 
 const initialOptions: WheelOption[] = [
   { id: '1', label: 'Пицца' },
@@ -179,6 +180,7 @@ function App() {
               results={history}
               onClear={handleClearHistory}
           />
+          <MaxBridgeInfo />
         </section>
 
         {winner && (
@@ -189,6 +191,7 @@ function App() {
                 onSpinAgain={handleSpin}
             />
         )}
+
       </main>
   );
 }
